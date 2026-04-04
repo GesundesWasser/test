@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("t");
 console.log("Lade test:" + myParam);
 async function getData() {
-  const url = "/data/" + myParam + ".json";
+  const url = "data/" + myParam + ".json";
   console.log(url);
   try {
     const response = await fetch(url);
