@@ -1,26 +1,37 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>WWAGOTests</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Strongly agree</th>
-          <th>Slightly agree</th>
-          <th>Slightly disagree</th>
-          <th>Strongly disagree</th>
-        </tr>
-      </thead>
-      <tbody id="test"></tbody>
-    </table>
-
-    <button onclick="punkteBerechnen()">Berechnen</button>
-    <p id="result"></p>
-  </body>
-</html>
+<link
+  href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    font-family: "Montserrat";
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  thead {
+    background-color: #ddd;
+  }
+</style>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">WWAGOTests</th>
+    </tr>
+  </thead>
+</table>
+<h1>Bei WWAGOTests gibt es die Folgenden tests:</h1>
+<ul>
+  <li>
+    <a href="beispieltest/">Beispieltest</a>
+  </li>
+  <li>
+    <a href="javascript:void(0)">Stressertest</a>
+  </li>
+</ul>

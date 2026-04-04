@@ -1,7 +1,10 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+* {
+  font-family: "Montserrat";
+}
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
 }
 th,
 td {
