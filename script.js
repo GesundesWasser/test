@@ -1,0 +1,46 @@
+// Fragen für den Test
+const fragen = [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu ultrices nisl, vel vestibulum dolor.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu ultrices nisl, vel vestibulum dolor.",
+];
+
+// Fragen in HTML rendern
+const test = document.getElementById("test");
+fragen.forEach((text, i) => {
+  const row = document.createElement("tr");
+
+  row.innerHTML = `
+        <td>${i + 1}) ${text}</td>
+        ${[2, 1, -1, -2]
+          .map((v) => `<td><input type="radio" name="q${i}" value="${v}"></td>`)
+          .join("")}
+      `;
+
+  test.appendChild(row);
+});
+
+// Punkte berechnen
+function punkteBerechnen() {
+  const unbeantwortet = fragen.filter(
+    (_, i) => !document.querySelector(`input[name="q${i}"]:checked`),
+  );
+
+  if (unbeantwortet.length > 0) {
+    document.getElementById("result").textContent =
+      "Alles muss beantwortet werden!";
+    return;
+  }
+
+  let total = 0;
+  fragen.forEach((_, i) => {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selected) total += +selected.value;
+  });
+
+  if (total < 0) {
+    total = 0;
+  }
+
+  document.getElementById("result").textContent =
+    "Das gibt " + total + " Punkte!";
+}
