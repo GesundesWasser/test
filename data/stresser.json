@@ -1,8 +1,34 @@
 [
-  "Mein lieblingszimmer ist immer das, wo ich nicht rein darf.",
-  "Ich schlage gegen die Tür, bis jemand sie aufmacht.",
-  "Wenn jemand beim duschen ist, will ich SOFORT die Xbox einstecken.",
-  "Wenn ein Freund von meinem Bruder kommt, muss ich natürlich mitgehen",
-  "Ich verstecke als Spaß irgendwelche sachen.",
-  "Ich glaube, dass ich nich Stressig bin."
+  {
+    "text": "Mein lieblingszimmer ist immer das, wo ich nicht rein darf.",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Ich schlage gegen die Tür, bis jemand sie aufmacht.",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Wenn jemand beim duschen ist, will ich SOFORT die Xbox einstecken.",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Wenn ein Freund von meinem Bruder kommt, muss ich natürlich mitgehen.",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Ich verstecke als Spaß irgendwelche sachen.",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Ich glaube, dass ich nicht Stressig bin.",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Ich klaue immer die Freunde von meinen Bruder!",
+    "punkte": [2, 1, -1, -2]
+  },
+  {
+    "text": "Auf der Tastatur von fremden Computern wird jede taste gedrückt!",
+    "punkte": [2, 1, -1, -2]
+  }
 ]

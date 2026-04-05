@@ -22,11 +22,11 @@ async function init() {
   if (!fragen) return; // ABANDON SHIP!
 
   const test = document.getElementById("test");
-  fragen.forEach((text, i) => {
+  fragen.forEach(({ text, punkte }, i) => {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${i + 1}) ${text}</td>
-      ${[2, 1, -1, -2]
+      ${punkte
         .map((v) => `<td><input type="radio" name="q${i}" value="${v}"></td>`)
         .join("")}
     `;
